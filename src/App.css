@@ -1,0 +1,179 @@
+.App {
+  position: absolute;
+  width: 550px;
+  height: 460px;
+
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+
+  background-color: #36363C;
+
+  border-radius: 4px;
+
+  padding: 22px;
+}
+
+.App header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: auto;
+
+  line-height: 22px;
+  padding: 22px 22px 11px;
+
+  color: #ffffff;
+}
+
+.App .filter-field {
+  position: absolute;
+  top: 55px;
+  left: 10px;
+  right: 10px;
+  bottom: auto;
+
+  padding: 0 11px;
+
+  display: flex;
+}
+
+.App .filter-field.focused {
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 4px;
+}
+
+.App .filter-field .icon {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+
+  margin-top: 8px;
+
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+
+  cursor: pointer;
+}
+
+.App .filter-field .icon.filter-icon {
+  background-image: url('search.png');
+}
+
+.App .filter-field .icon.clear-icon {
+  background-image: url('cross.png');
+}
+
+.App .filter-field input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+
+  width: 100%;
+  padding: 10px;
+
+  color: #ffffff;
+}
+
+.App .table-holder {
+  position: absolute;
+  top: 90px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  overflow-y: auto;
+}
+
+.App .table-holder table {
+  padding: 10px 5px 20px;
+  width: 100%;
+
+  border-spacing: 0;
+}
+
+.App .table-holder thead {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.App .table-holder thead th {
+  padding: 5px 20px;
+  padding-right: 0;
+}
+
+.App .table-holder tbody {
+  color: #C0C0C2;
+  font-size: 14px;
+}
+
+.App .table-holder tbody tr {
+}
+
+.App .table-holder tbody td {
+  padding: 5px 20px;
+  padding-right: 0;
+}
+
+.App .table-holder tbody td:first-child {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.App .table-holder tbody td:last-child {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.App .table-holder tbody .botName {
+  color: #B0A2FC;
+}
+
+.App .table-holder tbody tr:hover {
+  background-color: #44444B;
+}
+
+.App .table-holder table th {
+  text-align: left;
+}
+
+.App .table-holder table .nothing-found, .App .table-holder table .error {
+  text-align: center;
+}
+
+.App .table-holder table .nothing-found:hover, .App .table-holder table .error:hover {
+  background-color: transparent;
+}
+
+.App .table-holder table .nothing-found td, .App .table-holder table .error td {
+  padding-top: 50px;
+}
+
+.App .table-holder table .nothing-found img, .App .table-holder table .error img {
+  padding: 20px 0;
+}
+
+.App .table-holder table .nothing-found .nothing-found-text, .App .table-holder table .error .error-text {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.App .table-holder table .nothing-found .nothing-found-info, .App .table-holder table .error .error-info {
+  padding: 10px 0;
+}
+
+.btn {
+  font-size: 14px;
+  color: #B0A2FC;
+  padding: 3px;
+}
+
+.btn:hover {
+  background-color: #B0A2FC;
+  color: #36363C;
+
+  border-radius: 4px;
+  cursor: pointer;
+}
