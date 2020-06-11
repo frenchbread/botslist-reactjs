@@ -10,7 +10,7 @@ REACT_APP_APIHOST=http://localhost:3030/botslist
 
 ### Endpoint response should have following format:
 
-```json
+```
 [
   {
     id: <number>,
@@ -21,6 +21,12 @@ REACT_APP_APIHOST=http://localhost:3030/botslist
   },
   ...
 ]
+```
+
+### Install dependencies
+
+```
+$ npm install
 ```
 
 ## Available Scripts
